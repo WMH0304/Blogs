@@ -11,6 +11,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using SqlSugar;
+using SqlSugar.IOC;
 
 namespace Blogs
 {
@@ -28,10 +30,25 @@ namespace Blogs
         {
 
             services.AddControllers();
+            //swagger 
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Blogs", Version = "v1" });
             });
+
+            //sqlsugar
+            services.AddSqlSugar(new SqlSugar.IOC.IocConfig() {
+
+                ConnectionString = "server=.;uid=sa;pwd=sa;database=myBlog",
+                DbType = IocDbType.MySql,
+                IsAutoCloseConnection = true//×Ô¶¯ÊÍ·Å
+
+            });
+
+            
+
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,6 +61,9 @@ namespace Blogs
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Blogs v1"));
             }
 
+
+            
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
@@ -54,6 +74,13 @@ namespace Blogs
             {
                 endpoints.MapControllers();
             });
+
+           
+         
+
+
+
+
         }
     }
 }

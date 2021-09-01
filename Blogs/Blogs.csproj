@@ -5,7 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="SqlSugar.IOC" Version="1.7.0" />
+    <PackageReference Include="SqlSugar.Net5" Version="5.0.1.8" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Blogs.DataModels\Blogs.DataModels.csproj" />
   </ItemGroup>
 
 </Project>
