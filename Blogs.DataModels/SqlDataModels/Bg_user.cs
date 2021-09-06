@@ -1,19 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Blogs.DataModels.SqlDataModels
+﻿namespace Blogs.DataModels.SqlDataModels
 {
     /// <summary>
     /// 用户
     /// </summary>
+    [SqlSugar.SugarTable("Bg_user")]
     class Bg_user
     {
         /// <summary>
         /// 名字
         /// </summary>
+        [SqlSugar.SugarColumn(IsIdentity = true, IsPrimaryKey = true)]
         public string name { get; set; }
 
         /// <summary>

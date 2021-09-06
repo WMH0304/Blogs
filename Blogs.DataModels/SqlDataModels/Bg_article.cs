@@ -11,6 +11,7 @@ namespace Blogs.DataModels.SqlDataModels
     /// <summary>
     /// 文章类型
     /// </summary>
+    [SqlSugar.SugarTable("Bg_article")]
     class Bg_article
     {
         /// <summary>
@@ -20,7 +21,7 @@ namespace Blogs.DataModels.SqlDataModels
         public int id_article { get; set; }
 
         /// <summary>
-        /// 文章类型
+        /// 文章类型 id
         /// </summary>
         public string  id_article_type { get; set; }
 
@@ -39,6 +40,9 @@ namespace Blogs.DataModels.SqlDataModels
         /// </summary>
         public  string article_imgurl { get; set; }
 
-        public int MyProperty { get; set; }
+        /// <summary>
+        /// 文章修改日期
+        /// </summary>
+        public int article_up_date { get; set; }
     }
 }

@@ -7,9 +7,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blogs", "Blogs\Blogs.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blogs.DataModels", "Blogs.DataModels\Blogs.DataModels.csproj", "{C0057370-1100-4839-B79C-199EC3A0E783}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blogs.Server", "Blogs.Server\Blogs.Server.csproj", "{1F9500A9-28C5-409C-9083-C97610418AE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blogs.Server", "Blogs.Server\Blogs.Server.csproj", "{1F9500A9-28C5-409C-9083-C97610418AE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blogs.Tool", "Blogs.Tool\Blogs.Tool.csproj", "{93076F5A-313D-4683-A2D6-AF402EAAD198}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blogs.Tool", "Blogs.Tool\Blogs.Tool.csproj", "{93076F5A-313D-4683-A2D6-AF402EAAD198}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A27EA30B-0CFA-463B-A297-B1967BEA0FBE}"
+	ProjectSection(SolutionItems) = preProject
+		项目说明.txt = 项目说明.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zz_Blogs.Test", "Zz_Blogs.Test\Zz_Blogs.Test.csproj", "{3546DF4A-F833-4AA4-88CD-C93BAE586E01}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +40,10 @@ Global
 		{93076F5A-313D-4683-A2D6-AF402EAAD198}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93076F5A-313D-4683-A2D6-AF402EAAD198}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93076F5A-313D-4683-A2D6-AF402EAAD198}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3546DF4A-F833-4AA4-88CD-C93BAE586E01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3546DF4A-F833-4AA4-88CD-C93BAE586E01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3546DF4A-F833-4AA4-88CD-C93BAE586E01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3546DF4A-F833-4AA4-88CD-C93BAE586E01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

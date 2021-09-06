@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="SqlDataModels\Bg_article_comment.cs~RF3ddcfd1a.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="SqlSugar.Net5" Version="5.0.1.8" />
   </ItemGroup>
 
