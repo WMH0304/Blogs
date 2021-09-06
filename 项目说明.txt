@@ -1,0 +1,10 @@
+Blogs  是主项目，主要用于接受页面的请求
+Blogs.DataModels  数据服务和存储 主要用于和数据的交互
+Blogs.Server  主要用于对页面请求的数据的逻辑处理
+Blogs.Tool  工具库，用到的工具都放在这里
+
+一个正常的请求路径是
+
+Blogs =====> Blogs.Server =====> Blogs.DataModels  ==（可能会用到）===> Blogs.Tool
+
+然后正常返回

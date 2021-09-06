@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Blogs.DataModels\Blogs.DataModels.csproj" />
+    <ProjectReference Include="..\Blogs.Server\Blogs.Server.csproj" />
   </ItemGroup>
 
 </Project>
