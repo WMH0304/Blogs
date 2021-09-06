@@ -26,6 +26,11 @@ namespace Blogs.DataModels.SqlDataModels
         /// </summary>
         public string passwordd { get; set; }
 
+        /// <summary>
+        /// 验证码
+        /// </summary>
+        public string test_model { get; set; }
+
 
     }
 }
