@@ -1,29 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using SqlSugar;
-
-namespace Blogs.DataModels.SqlDataModels
+﻿namespace Blogs.DataModels.SqlDataModels
 {
 
     /// <summary>
-    /// 文章类型
+    /// 文章内容
     /// </summary>
     [SqlSugar.SugarTable("Bg_article")]
-    class Bg_article
+    public class Bg_article
     {
         /// <summary>
         /// id
         /// </summary>
-        [SqlSugar.SugarColumn(IsIdentity =true,IsPrimaryKey =true)]
+        [SqlSugar.SugarColumn(IsIdentity = true, IsPrimaryKey = true)]
         public int id_article { get; set; }
 
         /// <summary>
         /// 文章类型 id
         /// </summary>
-        public string  id_article_type { get; set; }
+        public string id_article_type { get; set; }
 
         /// <summary>
         /// 标题
@@ -38,7 +31,7 @@ namespace Blogs.DataModels.SqlDataModels
         /// <summary>
         /// 文章图片路径
         /// </summary>
-        public  string article_imgurl { get; set; }
+        public string article_imgurl { get; set; }
 
         /// <summary>
         /// 文章修改日期

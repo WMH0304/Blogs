@@ -20,13 +20,13 @@ namespace Blogs.Controllers
         /// </summary>
         /// <param name="test_model"></param>
         /// <returns></returns>
-        [HttpPost]
+        [HttpPost("test_model")]
         public string Ligin(string test_model)
         {
             //逻辑处理
             lg.Logins(test_model);
 
-            return string.Empty;
+            return "asdf";
         }
 
         /// <summary>
@@ -35,10 +35,10 @@ namespace Blogs.Controllers
         /// <param name="user_mun"></param>
         /// <param name="passwrod"></param>
         /// <returns></returns>
-        [HttpPost]
+        [HttpPost("code")]
         public string Ligin(string user_mun, string passwrod)
         {
-            return string.Empty;
+            return "asdfsad";
         }
 
         /// <summary>
@@ -48,9 +48,21 @@ namespace Blogs.Controllers
         [HttpPost]
         public string Send()
         {
-          return lg.Send();
+            //return lg.Send();
+            return "asdfa";
         }
 
-        
+        #region 入参模型
+
+        class Ligindata
+        {
+            public string code1 { get; set; }
+            public string code2 { get; set; }
+        }
+
+
+        #endregion
+
+
     }
 }

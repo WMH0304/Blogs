@@ -4,7 +4,7 @@
     /// 用户
     /// </summary>
     [SqlSugar.SugarTable("Bg_user")]
-    class Bg_user
+    public class Bg_user
     {
         /// <summary>
         /// 名字
